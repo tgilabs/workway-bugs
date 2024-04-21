@@ -2,7 +2,7 @@ name: דיווח באג
 description: באג הוא תקלה או פעולה לא צפויה שקורה במערכת
 title: "[בעייה]: "
 labels: ["באג", "ללא מענה"]
-projects: ["WorkWay Platform"]
+projects: ["tgilabs/8"]
 assignees:
   - webmasters
   - thefourcraft
