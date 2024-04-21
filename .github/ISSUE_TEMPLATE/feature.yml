@@ -1,7 +1,7 @@
 name: פוקצייה חדשה
 description: בקשה להוספת פוקנציונליות חדשה למערכת
 title: "[פונקצייה]: "
-labels: ["תכונה", "ללא מענה"]
+labels: ["רעיון", "ללא מענה"]
 projects: ["tgilabs/8"]
 assignees:
   - webmasters
