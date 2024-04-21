@@ -1,0 +1,57 @@
+name: פוקצייה חדשה
+description: בקשה להוספת פוקנציונליות חדשה למערכת
+title: "[פונקצייה]: "
+labels: ["תכונה", "ללא מענה"]
+projects: ["tgilabs/8"]
+assignees:
+  - webmasters
+  - thefourcraft
+  - JustMe-png
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        <div dir='rtl'>      
+
+        תודה על כך שאתם מקדישים זמן למלא את הדו״ח הזה ולשפר את הפלטפורמה שלנו. נשתדל לטפל בבעיה בהקדם האפשרי.
+        אפשר לעקוב אחר התקדמות הבעיה [בגיטהאב](https://github.com/orgs/tgilabs/projects/8).
+        
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: מה הרעיון שלכם?
+      description: בבקשה תארו את הפונקציונליות שאתם רוצים לראות במערכת
+      placeholder: מה הרעיון שלכם?
+      value: "אני רוצה לראות את הפונקציונליות הזו במערכת כי..."
+    validations:
+      required: true
+  - type: dropdown
+    id: location
+    attributes:
+      label: לאיזה מערכת תרצו להוסיף את הפונקציונליות?
+      description: ברחו לאיזה מערכת בפלטפורמה תרצו להוסיף את הפונקציונליות
+      options:
+        - צ׳אט
+        - פרופיל אישי
+        - התחברות למערכת
+        - התחברות בעזרת רשת חברתית
+        - אנליטיקה
+        - מדריך למשתמש
+        - לינק שבור
+        - קוד תמיכה ביוצר
+        - עוגיות
+        - תשלום בעזרת פייפאל
+        - תשלום בעזרת כרטיס אשראי
+        - תשלום בעזרת bit
+        - תשלום בעזרת google pay
+        - תשלום בעזרת apple pay
+        - מערכת סימול מודעות כאהובות
+        - מערכת הפוסטים הראשית
+        - מערכת הביקורות
+        - מערכת הזמנת פרוייקט אישי
+        - מערכת תגיות
+        - מערכת פרסום מודעות
+      default: 0
+    validations:
+      required: true
