@@ -13,58 +13,68 @@ body:
     attributes:
       value: |
         <div dir='rtl'>      
-        
+
         תודה על כך שאתם מקדישים זמן למלא את הדו״ח הזה ולשפר את הפלטפורמה שלנו. נשתדל לטפל בבעיה בהקדם האפשרי.
         ()[אפשר לעקוב אחר התקדמות הבעיה בפרויקט שלנו [בגיטהאב.
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: מה קרה?
+      description: בבקשה תארו מה קרה בצורה הטובה ביותר
+      placeholder: ספרו לנו מה אתם רואים
+      value: "היה בעייה! כשאני מנסה לעשות X, קורה Y"
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: location
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: היכן קרה הבעיה?
+      description: באיזה מערכת בפלטפורמה מתרחשת הבעיה?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - צ׳אט
+        - פרופיל אישי
+        - התחברות למערכת
+        - התחברות בעזרת רשת חברתית
+        - אנליטיקה
+        - מדריך למשתמש
+        - לינק שבור
+        - קוד תמיכה ביוצר
+        - עוגיות
+        - תשלום בעזרת פייפאל
+        - תשלום בעזרת כרטיס אשראי
+        - תשלום בעזרת bit
+        - תשלום בעזרת google pay
+        - תשלום בעזרת apple pay
+        - מערכת סימול מודעות כאהובות
+        - מערכת הפוסטים הראשית
+        - מערכת הביקורות
+        - מערכת הזמנת פרוייקט אישי
+        - מערכת תגיות
+        - מערכת פרסום מודעות
       default: 0
     validations:
       required: true
   - type: dropdown
     id: browsers
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: באיזה דפדפן מתרחשת הבעיה?
       multiple: true
       options:
         - Firefox
         - Chrome
         - Safari
         - Microsoft Edge
-  - type: textarea
-    id: logs
+        - Arc
+  - type: dropdown
+    id: device
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
+      label: סוג המכשיר
+      multiple: true
       options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+        - Smartphone (Android)
+        - Smartphone (Apple)
+        - Tablet (Android)
+        - Tablet (Apple)
+        - PC (Windows)
+        - PC (Mac)
+        - WorkWay App
