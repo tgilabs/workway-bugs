@@ -15,7 +15,7 @@ body:
         <div dir='rtl'>      
 
         תודה על כך שאתם מקדישים זמן למלא את הדו״ח הזה ולשפר את הפלטפורמה שלנו. נשתדל לטפל בבעיה בהקדם האפשרי.
-       [בגיטהאב](https://github.com/orgs/tgilabs/projects/8)אפשר לעקוב אחר התקדמות הבעיה .
+        [בגיטהאב](https://github.com/orgs/tgilabs/projects/8)אפשר לעקוב אחר התקדמות הבעיה .
         
   - type: textarea
     id: what-happened
