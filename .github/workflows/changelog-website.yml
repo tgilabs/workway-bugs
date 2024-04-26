@@ -25,7 +25,7 @@ jobs:
         id: checkout
         uses: actions/checkout@v4
 
-deploy:
+  deploy:
     needs: install
     name: 🚀 Deploy
     environment:
