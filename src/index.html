@@ -1,18 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
     <title>Changelog</title>
 </head>
 <body>
-    <div id="content"></div>
+    <div id="header"></div>
+    <div id="content"></div> 
+    <div id="footer"></div> 
+
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
         fetch('CHANGELOG.md')
-        .then(response => response.text())
-        .then(text => document.getElementById('content').innerHTML = marked(text))
-        .catch(error => console.error('Error loading the CHANGELOG.md:', error));
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('content').innerHTML = marked.parse(text);
+            })
+            .catch(error => console.error('Error loading the CHANGELOG.md:', error));
+
+        function loadHTML(containerId, htmlFile) {
+            fetch(htmlFile)
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById(containerId).innerHTML = html;
+                })
+                .catch(error => console.error('Error loading ' + htmlFile + ':', error));
+        }
+
+        loadHTML('header', 'header.html');
+        loadHTML('footer', 'footer.html');
     </script>
 </body>
 </html>
