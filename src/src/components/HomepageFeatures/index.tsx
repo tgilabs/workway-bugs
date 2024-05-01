@@ -12,34 +12,35 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'עדכון V1.1.0',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/fixing-pana.svg').default,
     description: (
       <>
         שיפורים במערכות צ'אט, מדריך משתמש, שינוי שם משתמש, אישור עוגיות, ליבה ותמיכה באתר. טופלו גם בעיות דיווחו על ידי משתמשים.
       </>
     ),
-    url: 'https://example.com/update-v1.1.0'
+    url: '/updates/v1-1-0'
   },
   {
     title: 'עדכון V1.2.0',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/Update-bro.svg').default,
     description: (
       <>
         בקרוב
       </>
     ),
-    url: 'https://example.com/update-v1.2.0'
+    url: '/updates/v1-2-0'
   },
   {
     title: 'עדכון V1.3.0',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/control-bro.svg').default,
     description: (
       <>
         בקרוב
       </>
     ),
-    url: 'https://example.com/update-v1.3.0'
+    url: '/updates/v1-3-0'
   },
+  
 ];
 
 function Feature({title, Svg, description, url}: FeatureItem) {

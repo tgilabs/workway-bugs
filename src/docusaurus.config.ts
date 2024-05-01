@@ -133,7 +133,8 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} TeGriAi,.`,
+      copyright: `Copyright © ${new Date().getFullYear()} TeGriAi <br>
+      <a href="https://storyset.com/online"> Online illustrations by Storyset</a>`,
     },
     prism: {
       theme: prismThemes.github,
