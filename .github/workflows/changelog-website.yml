@@ -30,17 +30,14 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-        working-directory: src
 
       - name: Build website
         run: yarn build
-        working-directory: src
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: src/build
-          name: website
+          path: build
 
   deploy:
     needs: install
