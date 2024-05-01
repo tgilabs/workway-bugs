@@ -3,12 +3,12 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'עדכוני Workway',
+  tagline: 'עדכוני פלטפורמת Workway',
+  favicon: 'img/workway-logo.png',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://updates.workway.co.il',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -42,6 +42,7 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
+          routeBasePath: 'updates',
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -58,7 +59,7 @@ const config: Config = {
       title: 'עדכוני פלטפורמת WorkWay',
       logo: {
         alt: 'WorkWay Logo',
-        src: 'img/logo.svg',
+        src: 'img/workway-logo.png',
       },
       items: [
         {
@@ -69,8 +70,8 @@ const config: Config = {
         },
         {to: '/updates', label: 'עדכונים', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://github.com/tgilabs/workway-bugs',
+          label: 'דיווח תקלות',
           position: 'right',
         },
       ],
@@ -79,7 +80,7 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'עדכונים',
           items: [
             {
               label: 'Tutorial',
@@ -108,8 +109,8 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'עדכונים',
+              to: '/updates',
             },
             {
               label: 'GitHub',
@@ -118,7 +119,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} TeGriAi,.`,
     },
     prism: {
       theme: prismThemes.github,
