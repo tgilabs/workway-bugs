@@ -103,37 +103,34 @@ const config: Config = {
           ],
         },
         {
-          title: 'Community',
+          title: 'קהילה',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'אתר ראשי',
+              href: 'https://tegriai.com',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'דיסקורד',
+              href: 'https://discord.gg/tgi',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'ניווט מהיר',
           items: [
             {
               label: 'עדכונים',
               to: '/updates',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'מידע כללי',
+              to: '/info',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} TeGriAi <br>
+      copyright: `כל הזכויות שמורות © ${new Date().getFullYear()} TeGriAi<br>
+
       <a href="https://storyset.com/online"> Online illustrations by Storyset</a>`,
     },
     prism: {
