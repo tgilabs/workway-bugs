@@ -35,6 +35,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          routeBasePath: 'info',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -66,9 +67,14 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'מידע כללי',
         },
         {to: '/updates', label: 'עדכונים', position: 'left'},
+        {
+          href: 'https://workway.co.il',
+          label: 'פלטפורמת WorkWay',
+          position: 'left',
+        },
         {
           href: 'https://github.com/tgilabs/workway-bugs',
           label: 'דיווח תקלות',
@@ -80,11 +86,19 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'עדכונים',
+          title: 'המעבדה',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'על המעבדה',
+              to: 'https://tegriai.com/lab',
+            },
+            {
+              label: 'פרויקטים',
+              to: 'https://tegriai.com/projects',
+            },
+            {
+              label: 'מדיניות',
+              to: 'https://tegriai.com/legal',
             },
           ],
         },
