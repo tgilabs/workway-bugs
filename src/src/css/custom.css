@@ -1,0 +1,64 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+/* Font */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Assistant', sans-serif;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1rem;
+}
+body {
+  font-family: 'Assistant', sans-serif;
+}
+
+
+/* Light Mode */
+:root {
+  --ifm-color-primary: #004EFF;
+  --ifm-color-primary-dark: #003ECF;
+  --ifm-color-primary-darker: #0033B3;
+  --ifm-color-primary-darkest: #002A99;
+  --ifm-color-primary-light: #3366FF; 
+  --ifm-color-primary-lighter: #6689FF; 
+  --ifm-color-primary-lightest: #99ADFF; 
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode */
+[data-theme='dark'] {
+  --ifm-color-primary: #6689FF; 
+  --ifm-color-primary-dark: #3366FF; 
+  --ifm-color-primary-darker: #004EFF;
+  --ifm-color-primary-darkest: #003ECF; 
+  --ifm-color-primary-light: #99ADFF; 
+  --ifm-color-primary-lighter: #BBD2FF; 
+  --ifm-color-primary-lightest: #DDE6FF; 
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
