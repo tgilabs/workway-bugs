@@ -15,7 +15,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/fixing-pana.svg').default,
     description: (
       <>
-        שיפורים במערכות צ'אט, מדריך משתמש, שינוי שם משתמש, אישור עוגיות, ליבה ותמיכה באתר. טופלו גם בעיות דיווחו על ידי משתמשים.
+        שיפורים במערכות צ'אט, מדריך משתמש, שינוי שם משתמש, אישור עוגיות, ליבה ותמיכה באתר. טופלו גם בעיות שהועלו על ידי משתמשי הפלטפורמה.
       </>
     ),
     url: '/updates/v1-1-0'
@@ -25,7 +25,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/Update-bro.svg').default,
     description: (
       <>
-        בקרוב
+        שיפורים במערכת הצ'אט, תיקון בעיות שהועלו על ידי משתמשים, תיקון בעיות עם תמיכת צ'אט ועוד.
       </>
     ),
     url: '/updates/v1-2-0'
