@@ -20,8 +20,8 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="כל העדכונים של פלטפורמת WorkWay במקום אחד">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
