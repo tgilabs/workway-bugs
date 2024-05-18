@@ -1,0 +1,35 @@
+name: Issue Reply Labeler
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  labelOnReply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Label issue on reply
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const issueComment = context.payload.comment;
+            const issue = context.payload.issue;
+            const commenter = issueComment.user.login;
+            const orgMembers = await github.orgs.listMembers({
+              org: 'tgilabs',
+              team_slug: 'webmasters'
+            });
+
+            const isWebmaster = orgMembers.data.some(member => member.login === commenter);
+
+            if (isWebmaster) {
+              github.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: ['התקבל מענה']
+              });
+            }
