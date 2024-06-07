@@ -124,7 +124,7 @@ const config: Config = {
             },
             {
               label: 'מידע כללי',
-              to: '/info',
+              to: 'https://wiki.tegriai.com',
             },
           ],
         },
