@@ -58,7 +58,7 @@ const FeatureList: FeatureItem[] = [
         מערכת תיק העבודות החדש, תיקוני סליקה בעזרת PayPal ועוד.
       </>
     ),
-    url: '/updates/v1-3-0'
+    url: '/updates/v1-4-0'
   },
   
 ];
