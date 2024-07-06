@@ -48,7 +48,7 @@ const FeatureList: FeatureItem[] = [
         תיקון אבטחה!
       </>
     ),
-    url: '/updates/v1-3-1'
+    url: '/updates/v1-3-1-security'
   },
   {
     title: 'עדכון V1.4.0',
