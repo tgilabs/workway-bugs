@@ -35,7 +35,27 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/control-bro.svg').default,
     description: (
       <>
-        בקרוב
+        שיפורים בכל מערכות הפלטפטרמה והשקת מערכת המינויים החדשה!
+      </>
+    ),
+    url: '/updates/v1-3-0'
+  },
+  {
+    title: 'עדכון V1.3.1',
+    Svg: require('@site/static/img/server-amico.svg').default,
+    description: (
+      <>
+        תיקון אבטחה!
+      </>
+    ),
+    url: '/updates/v1-3-1'
+  },
+  {
+    title: 'עדכון V1.4.0',
+    Svg: require('@site/static/img/update-amico.svg').default,
+    description: (
+      <>
+        מערכת תיק העבודות החדש, תיקוני סליקה בעזרת PayPal ועוד.
       </>
     ),
     url: '/updates/v1-3-0'
