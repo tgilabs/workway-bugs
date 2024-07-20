@@ -60,6 +60,16 @@ const FeatureList: FeatureItem[] = [
     ),
     url: '/updates/v1-4-0'
   },
+  {
+    title: 'עדכון V1.5.0',
+    Svg: require('@site/static/img/update-amico.svg').default,
+    description: (
+    <>
+    שיפורים בעורך האתר, מערכת הצ’אט, גלגול לאחור לתוספים, תמיכת WhatsApp, ותיקוני באגים ואבטחה. הוספת אפשרויות מיון, עיצוב שדות ושיפור תקשורת ענן.
+    </>
+    ),
+    url: '/updates/v1-5-0'
+  },
   
 ];
 
